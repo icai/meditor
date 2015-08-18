@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Markdown Editor</title>
+		<link rel="canonical" href="https://markdown.w3cub.com/">
+		<link rel="icon" href="/favicon.png" >
+		<link rel="shortcut icon" href="/favicon.png" >
+		<meta charset="UTF-8">
+		<meta name="description" content="Markdown editor based on PageDown and and to-markdown, convert html to markdown and convert markdwon to html.">
+		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<script>
+			// Use ?debug to serve original JavaScript files instead of minified
+			window.baseDir = 'res';
+			if (!/(\?|&)debug($|&)/.test(location.search)) {
+				window.baseDir += '-min';
+			}
+			window.require = {
+				baseUrl: window.baseDir,
+				deps: ['main']
+			};
+		</script>
+		<script src="res-min/require.js"></script>
+	</head>
+
+	<body></body>
+
+</html>
