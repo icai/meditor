@@ -4,6 +4,7 @@
 		<title>Markdown Editor</title>
 		<link rel="canonical" href="https://markdown.w3cub.com/">
 		<link rel="icon" href="/favicon.png" >
+		<link rel="icon" sizes="192x192" href="res-min/img/logo-highres.png">
 		<link rel="shortcut icon" href="/favicon.png" >
 		<meta charset="UTF-8">
 		<meta name="description" content="Markdown editor based on PageDown and and to-markdown, convert html to markdown and convert markdwon to html.">
@@ -24,7 +25,59 @@
 		</script>
 		<script src="res-min/require.js"></script>
 	</head>
+	<style>
+		.logo-loading{
+			text-align: center;
+			margin-top: 100px;
+		}
 
-	<body></body>
+		@-webkit-keyframes pulse {
+		    0% {
+		        -webkit-transform: scale(1);
+		        transform: scale(1)
+		    }
+
+		    50% {
+		        -webkit-transform: scale(1.05);
+		        transform: scale(1.05)
+		    }
+
+		    100% {
+		        -webkit-transform: scale(1);
+		        transform: scale(1)
+		    }
+		}
+
+		@keyframes pulse {
+		    0% {
+		        -webkit-transform: scale(1);
+		        -ms-transform: scale(1);
+		        transform: scale(1)
+		    }
+
+		    50% {
+		        -webkit-transform: scale(1.05);
+		        -ms-transform: scale(1.05);
+		        transform: scale(1.05)
+		    }
+
+		    100% {
+		        -webkit-transform: scale(1);
+		        -ms-transform: scale(1);
+		        transform: scale(1)
+		    }
+		}
+
+		.logo-loading img{
+			-webkit-animation: pulse 3s ease-in-out 0s infinite;
+			-o-animation: pulse 3s ease-in-out 0s infinite;
+			animation: pulse 3s ease-in-out 0s infinite;
+		}
+	</style>
+	<body>
+		<div class="logo-loading">
+			<img src="res-min/img/logo-256.png" alt="markdown" title="loading">
+		</div>
+	</body>
 
 </html>
