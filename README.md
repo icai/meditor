@@ -7,3 +7,6 @@ Markdown editor based on PageDown and and to-markdown, convert html to markdown 
 
 link: [Markdown editor](https://markdown.w3cub.com/)
 
+
+based on `https://github.com/benweet/stackedit`
+
